@@ -139,15 +139,34 @@
   html {
     scroll-behavior: smooth;
     font-family: Ubuntu, 'Open Sans', sans-serif;
+  }
 
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  #app {
     display: flex;
     flex-direction: column;
     min-height: 100dvh;
   }
 
-  body {
-    @apply bg-background text-foreground;
-
-    flex: 1;
+  h1, h2 {
+    font-weight: 600;
+  }
+  h1 {
+    font-size: calc(2rem + 1vw);
+  }
+  h2 {
+    font-size: calc(1.75rem + 0.875vw);
+  }
+  h3 {
+    font-size: calc(1.5rem + 0.75vw);
+  }
+  h4 {
+    font-size: calc(1.25rem + 0.675vw);
+  }
+  div, p, a, li, th, td {
+    font-size: calc(1rem + 0.125vw);
   }
 }
